@@ -7,66 +7,150 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#teaching">Teaching</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Welcome to My Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#teaching">Teaching</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <section id="home">
-            <h2>About Me</h2>
-            <p>I am a PhD student at the University of Pennsylvania working on Political Economy</a>.</p>
-            <p>If you like microeconomics, check <a href="https://x.com/m_crobot" target="_blank">my bot</a>.</p>
-            <p>Here's some <a href="https://github.com/javiertasso/javiertasso.github.io/tree/main/sample_codes" target="_blank">code to learn basic Python for econometrics</a>.</p>
-        </section>  
+        <main>
+            <section id="home">
+                <h2>About Me</h2>
+                <p>I am a PhD student at the University of Pennsylvania working on Political Economy.</p>
+                <p>If you like microeconomics, check <a href="https://x.com/m_crobot" target="_blank">my bot</a>.</p>
+                <p>Here's some <a href="https://github.com/javiertasso/javiertasso.github.io/tree/main/sample_codes" target="_blank">code to learn basic Python for econometrics</a>.</p>
+            </section>  
 
-        <section id="research">
-            <h2>Research</h2>
-            <p></p>
-        </section>
+            <section id="research">
+                <h2>Research</h2>
+                <p></p>
+            </section>
 
-        <section id="teaching">
-            <h2>Teaching</h2>
-            <p></p>
+            <section id="teaching">
+                <h2>Teaching</h2>
+                <p>In the summer of 2024, I taught Intermediate Microeconomics. Below are the slides and problem sets.</p>
+                <ul>
+                    <li><strong>Slides:</strong>
+                        <ul>
+                            <li><a href="teaching/micro/Slides_Consumer_Theory.pdf" target="_blank">1. Consumer Theory</a></li>
+                            <li><a href="teaching/micro/Slides_GE_Exchange.pdf" target="_blank">2. General Equilibrium: Exchange</a></li>
+                            <li><a href="teaching/micro/Slides_Producer.pdf" target="_blank">3. Producer Theory</a></li>
+                            <li><a href="teaching/micro/Slides_GE_Production.pdf" target="_blank">4. General Equilibrium: Production</a></li>
+                            <li><a href="teaching/micro/Slides_Uncertainty.pdf" target="_blank">5. Risk and Uncertainty</a></li>
+                            <li><a href="teaching/micro/Slides_Time.pdf" target="_blank">6. Intertemporal Choice</a></li>
+                        </ul>
+                    </li>
+                    <li><strong>Problem Sets:</strong>
+                        <ul>
+                            <li><a href="teaching/micro/Consumer_Cheatsheet.pdf" target="_blank">Cheatsheet for Consumer Theory</a></li>
+                            <!-- Add more problem sets as needed -->
+                        </ul>
+                    </li>
+                </ul>
+            </section>
 
-            <p>In the summer of 2024, I taught Intermediate Microeconomics. Below are the slides and problem sets.</p>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>You can provide contact details here, like an email address or a contact form.</p>
+            </section>
+        </main>
 
-            <ul>
-                <li>
-                    <strong>Slides:</strong>
-                    <ul>
-                        <li><a href="teaching/micro/Slides_Consumer_Theory.pdf" target="_blank">1. Consumer Theory</a></li>
-                        <li><a href="teaching/micro/Slides_GE_Exchange.pdf" target="_blank">2. General Equilibrium: Exchange</a></li>
-                        <li><a href="teaching/micro/Slides_Producer.pdf" target="_blank">3. Producer Theory</a></li>
-                        <li><a href="teaching/micro/Slides_GE_Production.pdf" target="_blank">4. General Equilibrium: Production</a></li>
-                        <li><a href="teaching/micro/Slides_Uncertainty.pdf" target="_blank">5. Risk and Uncertainty</a></li>
-                        <li><a href="teaching/micro/Slides_Time.pdf" target="_blank">6. Intertemporal Choice</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Problem Sets:</strong>
-                    <ul>
-                        <li><a href="teaching/micro/Consumer_Cheatsheet.pdf" target="_blank">Cheatsheet for Consumer Theory</a></li>
-                        <!-- Add more problem sets as needed -->
-                    </ul>
-                </li>
-            </ul>
+        <footer>
+            <p>&copy; 2024 Javier. All rights reserved.</p>
+        </footer>
+    </div>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>You can provide contact details here, like an email address or a contact form.</p>
-        </section>
-    </main>
+    <style>
+        /* Reset margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <footer>
-        <p>&copy; 2024 Javier. All rights reserved.</p>
-    </footer>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+            max-width: 1000px;
+            width: 100%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header and Navigation */
+        header {
+            grid-column: 1 / 2;
+            padding: 10px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-left: 20px;
+        }
+
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* Main content */
+        main {
+            grid-column: 2 / 3;
+            padding: 10px;
+        }
+
+        main section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        /* Footer styling */
+        footer {
+            grid-column: span 2;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
 </body>
 </html>
