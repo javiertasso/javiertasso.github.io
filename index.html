@@ -83,6 +83,7 @@
             align-items: center;
             min-height: 100vh;
             background-color: #f0f0f0;
+            padding: 20px;
         }
 
         .container {
@@ -120,7 +121,7 @@
         nav ul li a {
             color: #333;
             text-decoration: none;
-            fint-size: 18px; 
+            font-size: 18px;
         }
 
         /* Main content */
@@ -134,14 +135,14 @@
         }
 
         h2 {
-            font-size: 20px;
+            font-size: 22px;
             margin-bottom: 10px;
         }
 
         p {
             margin-bottom: 10px;
-            line-height: 1.6;
-            font-size: 18px; 
+            line-height: 1.8;
+            font-size: 18px;
         }
 
         /* Footer styling */
@@ -152,6 +153,26 @@
             padding: 10px;
             font-size: 16px;
             color: #666;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr; /* Single column layout */
+                padding: 20px;
+            }
+
+            main {
+                grid-column: 1; /* Adjust main to span the entire width */
+            }
+
+            footer {
+                grid-column: 1;
+            }
+
+            header {
+                text-align: center;
+            }
         }
     </style>
 </body>
