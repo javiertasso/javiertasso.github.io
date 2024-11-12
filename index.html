@@ -36,9 +36,9 @@
             <section id="teaching">
                 <h2>Teaching</h2>
                 <p>In the summer of 2024, I taught Intermediate Microeconomics. Below are the slides and problem sets.</p>
-                <ul>
+                <ul class="main-list">
                     <li><strong>Slides:</strong>
-                        <ul>
+                        <ul class="sub-list">
                             <li><a href="teaching/micro/Slides_Consumer_Theory.pdf" target="_blank">1. Consumer Theory</a></li>
                             <li><a href="teaching/micro/Slides_GE_Exchange.pdf" target="_blank">2. General Equilibrium: Exchange</a></li>
                             <li><a href="teaching/micro/Slides_Producer.pdf" target="_blank">3. Producer Theory</a></li>
@@ -48,7 +48,7 @@
                         </ul>
                     </li>
                     <li><strong>Problem Sets:</strong>
-                        <ul>
+                        <ul class="sub-list">
                             <li><a href="teaching/micro/Consumer_Cheatsheet.pdf" target="_blank">Cheatsheet for Consumer Theory</a></li>
                             <!-- Add more problem sets as needed -->
                         </ul>
@@ -155,6 +155,20 @@
             color: #666;
         }
 
+        /* Styling for Lists */
+        .main-list {
+            padding-left: 20px;
+        }
+
+        .sub-list {
+            padding-left: 40px;
+            list-style-type: disc;
+        }
+
+        .sub-list li {
+            margin-bottom: 5px;
+        }
+
         /* Media Query for Mobile Devices */
         @media (max-width: 768px) {
             .container {
@@ -172,6 +186,14 @@
 
             header {
                 text-align: center;
+            }
+
+            .main-list {
+                padding-left: 0;
+            }
+
+            .sub-list {
+                padding-left: 20px;
             }
         }
     </style>
