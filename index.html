@@ -141,9 +141,13 @@
 
         /* Header and Navigation */
         header {
-            grid-column: 1 / 2;
             padding: 10px;
+            position: sticky;
+            top: 0; /* Stick to the top */
+            background: #fff; /* Optional: background of header area */
+            z-index: 100; /* Ensures the header stays above other content */
         }
+
 
         header h1 {
             font-size: 28px;
