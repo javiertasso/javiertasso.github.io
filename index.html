@@ -141,8 +141,12 @@
 
         /* Header and Navigation */
         header {
-            grid-column: 1 / 2;
+            grid-column: 1 / 2; /* Keep header only within the first column */
             padding: 10px;
+            position: sticky;
+            top: 0; /* Stick to the top */
+            background: #fff; /* Optional: make sure the background is clear */
+            z-index: 100; /* Ensures the header stays above other content */
         }
 
         header h1 {
