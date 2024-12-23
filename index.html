@@ -141,13 +141,19 @@
             padding: 40px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 120px; /* Adjust this value to match the height of your header */
         }
 
         /* Header and Navigation */
         header {
-                grid-column: 1 / 2;
-                padding: 10px;
-            }
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for a floating effect */
+        }
+
 
         header h1 {
             font-size: 28px;
