@@ -139,24 +139,15 @@
             width: 100%;
             background: #fff;
             padding: 40px;
-            padding-left: calc(25% + 20px); /* Add padding to offset the header's fixed position */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         /* Header and Navigation */
         header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            /* width: calc(25% - 20px); /* Adjust width to fit its original grid column */
-            background-color: #fff; /* Optional */
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional */
-            padding: 10px; /* Keep the original padding */
-            grid-column: 1 / 2; /* Ensure it stays in its original grid column */
-            /* height: 100vh; /* Optional: Stretch header vertically for a sidebar-like effect */
-        }
+                grid-column: 1 / 2;
+                padding: 10px;
+            }
 
         header h1 {
             font-size: 28px;
