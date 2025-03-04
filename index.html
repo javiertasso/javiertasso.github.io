@@ -147,6 +147,11 @@
         header {
                 grid-column: 1 / 2;
                 padding: 10px;
+                position: sticky;
+                top: 0;
+                align-self: start;
+                height: 100vh;  /* Makes header take the full height of viewport */
+                overflow-y: auto; /* Allows scrolling within header if needed */
             }
 
         header h1 {
