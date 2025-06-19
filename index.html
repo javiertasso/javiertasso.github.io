@@ -163,15 +163,28 @@
             list-style: none;
             display: flex;
             flex-direction: column;
+            align-items: center;
             gap: 15px;
-            padding-left: 20px;
+            padding: 0;
         }
 
         nav ul li a {
-            color: #0000EE;
-            text-decoration: underline;
-            font-size: 18px;
+            display: inline-block;
+            width: 140px;              /* Set fixed width */
+            text-align: center;        /* Center the text inside the button */
+            padding: 10px 0;           /* Vertical padding only */
+            font-size: 16px;
+            color: white;
+            background-color: #0077cc;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
         }
+
+        nav ul li a:hover {
+            background-color: #005fa3;
+        }
+
 
         /* Main content */
         main {
