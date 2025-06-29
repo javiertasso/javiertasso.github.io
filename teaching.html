@@ -8,18 +8,19 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="sidebar">
             <h1>Javier Tasso</h1>
             <p style="text-align: center;">jtasso@sas.upenn.edu</p>
             <img src="sample_picture.jpg" alt="Javier Tasso" style="width: 200px; height: auto; display: block; margin: 0 auto; margin-bottom: 20px;">
             <nav>
                 <ul>
-                    <li><a href="/">About Me</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="/research">Research</a></li>
                     <li><a href="/teaching">Teaching</a></li>
                 </ul>
             </nav>
         </header>
+
 
         <main>
            
@@ -123,31 +124,30 @@
 
         /* Basic Styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #fff;
-            padding: 20px;
+            background-color: #e0f7fa;
+            padding: 0px;
         }
 
         .container {
             display: grid;
-            grid-template-columns: 1fr 3fr;
-            gap: 20px;
-            max-width: 1200px;
+            grid-template-columns: 25% 75%;
+            /*gap: 20px;*/
+            max-width: 1600px;
             width: 100%;
-            background: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+            background: transparent;
+            padding: 0;
+            border-radius: 0;
+            box-shadow: none;
         }
 
         /* Header and Navigation */
         header {
                 grid-column: 1 / 2;
-                padding: 10px;
                 position: sticky;
                 top: 0; 
                 height: 100vh;  /* Makes header take the full height of viewport */
@@ -158,6 +158,12 @@
             font-size: 28px;
             margin-bottom: 10px;
             text-align: center;
+        }
+
+        .sidebar {
+            background-color: #003366;  /* Light blue-gray, change as you want */
+            padding: 50px;
+            color: white; 
         }
 
         nav ul {
@@ -174,9 +180,10 @@
             width: 140px;              /* Set fixed width */
             text-align: center;        /* Center the text inside the button */
             padding: 10px 0;           /* Vertical padding only */
-            font-size: 16px;
+            font-size: 20px;
+            font-weight: bold;   
             color: white;
-            background-color: #0077cc;
+            background-color: #003366;
             text-decoration: none;
             border-radius: 6px;
             transition: background-color 0.3s ease;
@@ -190,11 +197,15 @@
         /* Main content */
         main {
             grid-column: 2 / 3;
-            padding: 10px;
+            padding: 20px;
         }
 
         main section {
             margin-bottom: 20px;
+            margin-top: 100px; 
+            margin-left: 40px; 
+            margin-right: 120px;
+            
         }
 
         h2 {
@@ -222,6 +233,12 @@
             margin-bottom: 5px;
         }
 
+        a {
+        color: #124b85;
+        /*text-decoration: none;*/
+        }
+
+
         /* Media Query for Mobile Devices */
         @media (max-width: 768px) {
             .container {
@@ -231,6 +248,10 @@
 
             main {
                 grid-column: 1; /* Adjust main to span the entire width */
+            }
+
+            main section {
+                margin: 10px;
             }
 
             header {
@@ -245,7 +266,7 @@
             }
 
             .sub-list {
-                padding-left: 20px;
+                padding-left: 0px;
             }
         }
     </style>
